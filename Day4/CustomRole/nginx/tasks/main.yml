@@ -1,0 +1,8 @@
+---
+# tasks file for nginx
+- tasks: 
+    - include: installnginx.yml
+    - include: configure.yml
+    - include: webroot.yml
+
+

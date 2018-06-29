@@ -1,0 +1,16 @@
+2018-06-27 12:04:48,525 p=12361 u=root |  [0;32mcoldindia1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}[0m
+2018-06-27 12:04:48,530 p=12361 u=root |  [0;32mcoldindia2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}[0m
+2018-06-27 12:04:48,562 p=12361 u=root |  [0;32mgoldindia2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}[0m
+2018-06-27 12:04:48,566 p=12361 u=root |  [0;32mgoldindia1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}[0m

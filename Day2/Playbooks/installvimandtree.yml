@@ -1,0 +1,14 @@
+---
+- name: This playbook will install vim and tree
+  hosts: all
+  tasks:
+    - name: This will install vim
+      apt: name=vim state=present update_cache=yes
+    - name: This will install tree
+      apt: name=tree state=present update_cache=yes
+
+- name: this is the second play
+  hosts: dev_server
+  tasks:
+    - name: This task belongs to second play
+      debug: msg="Second play - First task"     

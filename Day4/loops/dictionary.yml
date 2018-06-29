@@ -1,0 +1,15 @@
+- name: Demonstrtates dictionary variable and uts navigation
+  hosts: localhost
+  vars: 
+    - contacts:
+         Sriram:
+            surname: Yadav
+            mobile: 977-535-5180
+         Nitesh: 
+            surname: Gupta
+            mobile: 977-555-3510
+
+  tasks: 
+    - name: Print all contacts
+      debug: msg="surname of {{item.key}} is {{item.value.surname}}."
+      with_dict: "{{contacts}}"

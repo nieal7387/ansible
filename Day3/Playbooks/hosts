@@ -1,0 +1,18 @@
+[all]
+goldindia1 ansible_port=2000
+goldindia2 ansible_port=2001
+coldindia11 ansible_port=2031
+coldindia12 ansible_port=2030
+
+[ubuntu]
+goldindia1
+goldindia2
+
+[centos]
+coldindia11
+coldindia12
+
+[all:vars]
+ansible_user=root
+ansible_host=localhost
+ansible_private_key_file=/root/.ssh/id_rsa

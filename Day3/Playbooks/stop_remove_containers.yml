@@ -1,0 +1,11 @@
+
+- name: Stop and remove dockers
+  hosts: localhost
+  tasks: 
+    - name: stop and remove the containers
+      docker: 
+        name: "coldindia{{item}}"
+        hostname: "coldindia{{item}}"
+        image: boa/ansible-centos
+        state: absent
+      with_sequence: start=1 end=2

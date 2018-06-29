@@ -1,0 +1,686 @@
+2018-06-27 14:34:08,158 p=22818 u=root |  PLAY [Installs, configures and Deploys web page in nginx web server] ***********
+2018-06-27 14:34:08,172 p=22818 u=root |  TASK [setup] *******************************************************************
+2018-06-27 14:34:08,673 p=22818 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:34:08,685 p=22818 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:34:13,280 p=22818 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:34:18,156 p=22818 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:34:18,160 p=22818 u=root |  TASK [Install nginx web server on Ubuntu] **************************************
+2018-06-27 14:34:18,193 p=22818 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:34:18,194 p=22818 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:34:31,165 p=22818 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:34:31,172 p=22818 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:34:31,173 p=22818 u=root |  TASK [Install epel release on CentOS server] ***********************************
+2018-06-27 14:34:31,216 p=22818 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:34:31,216 p=22818 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:34:39,835 p=22818 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:34:44,495 p=22818 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:34:44,497 p=22818 u=root |  TASK [Install nginx web server on CentOS server] *******************************
+2018-06-27 14:34:44,538 p=22818 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:34:44,541 p=22818 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:34:57,290 p=22818 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:34:58,876 p=22818 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:34:58,878 p=22818 u=root |  TASK [Configure web root folder] ***********************************************
+2018-06-27 14:34:58,910 p=22818 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:34:58,913 p=22818 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:34:59,039 p=22818 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:34:59,049 p=22818 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:34:59,050 p=22818 u=root |  TASK [Restart nginx web server on Ubuntu] **************************************
+2018-06-27 14:34:59,084 p=22818 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:34:59,084 p=22818 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:35:00,278 p=22818 u=root |  [0;33mchanged: [goldindia1][0m
+2018-06-27 14:35:00,283 p=22818 u=root |  [0;33mchanged: [goldindia2][0m
+2018-06-27 14:35:00,286 p=22818 u=root |  TASK [Restart nginx web server on CentOS] **************************************
+2018-06-27 14:35:00,330 p=22818 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:35:00,330 p=22818 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:35:01,177 p=22818 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:35:01,199 p=22818 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:35:01,201 p=22818 u=root |  TASK [Create the web root folder] **********************************************
+2018-06-27 14:35:01,332 p=22818 u=root |  [0;33mchanged: [goldindia1][0m
+2018-06-27 14:35:01,333 p=22818 u=root |  [1;35m [WARNING]: Consider using file module with state=directory rather than running mkdir
+[0m
+2018-06-27 14:35:01,336 p=22818 u=root |  [0;33mchanged: [goldindia2][0m
+2018-06-27 14:35:01,861 p=22818 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:35:02,880 p=22818 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:35:02,883 p=22818 u=root |  TASK [deploy our custom html page in nginx web server] *************************
+2018-06-27 14:35:03,086 p=22818 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:35:03,089 p=22818 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:35:03,091 p=22818 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:35:03,094 p=22818 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:35:03,095 p=22818 u=root |  TASK [Restart nginx web server on Ubuntu] **************************************
+2018-06-27 14:35:03,125 p=22818 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:35:03,127 p=22818 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:35:04,330 p=22818 u=root |  [0;33mchanged: [goldindia1][0m
+2018-06-27 14:35:04,330 p=22818 u=root |  [0;33mchanged: [goldindia2][0m
+2018-06-27 14:35:04,332 p=22818 u=root |  TASK [Restart nginx web server on CentOS] **************************************
+2018-06-27 14:35:04,374 p=22818 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:35:04,378 p=22818 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:35:05,226 p=22818 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:35:05,227 p=22818 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:35:05,228 p=22818 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 14:35:05,229 p=22818 u=root |  coldindia11                : ok=7    changed=3    unreachable=0    failed=0   
+2018-06-27 14:35:05,229 p=22818 u=root |  coldindia12                : ok=7    changed=3    unreachable=0    failed=0   
+2018-06-27 14:35:05,229 p=22818 u=root |  goldindia1                 : ok=7    changed=3    unreachable=0    failed=0   
+2018-06-27 14:35:05,229 p=22818 u=root |  goldindia2                 : ok=7    changed=3    unreachable=0    failed=0   
+2018-06-27 14:43:34,314 p=24653 u=root |  PLAY [Installs, configures and Deploys web page in nginx web server] ***********
+2018-06-27 14:43:34,328 p=24653 u=root |  TASK [setup] *******************************************************************
+2018-06-27 14:43:34,874 p=24653 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:43:34,891 p=24653 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:43:39,404 p=24653 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:43:39,496 p=24653 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:43:39,498 p=24653 u=root |  TASK [Install nginx web server on Ubuntu] **************************************
+2018-06-27 14:43:39,527 p=24653 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:43:39,530 p=24653 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:43:47,211 p=24653 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:43:47,325 p=24653 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:43:47,328 p=24653 u=root |  TASK [Install epel release on CentOS server] ***********************************
+2018-06-27 14:43:47,374 p=24653 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:43:47,375 p=24653 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:43:55,435 p=24653 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:44:02,433 p=24653 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:44:02,435 p=24653 u=root |  TASK [Install nginx web server on CentOS server] *******************************
+2018-06-27 14:44:02,481 p=24653 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:44:02,482 p=24653 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:44:17,219 p=24653 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:44:20,465 p=24653 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:44:20,467 p=24653 u=root |  TASK [Configure web root folder on Ubuntu Server] ******************************
+2018-06-27 14:44:20,498 p=24653 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:44:20,500 p=24653 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:44:20,630 p=24653 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:44:20,631 p=24653 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:44:20,633 p=24653 u=root |  TASK [Configure web root folder on CentOS Server] ******************************
+2018-06-27 14:44:20,676 p=24653 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:44:20,677 p=24653 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:44:21,923 p=24653 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:44:21,924 p=24653 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:44:21,926 p=24653 u=root |  TASK [Restart nginx web server on Ubuntu] **************************************
+2018-06-27 14:44:21,959 p=24653 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:44:21,961 p=24653 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:44:23,155 p=24653 u=root |  [0;33mchanged: [goldindia2][0m
+2018-06-27 14:44:23,156 p=24653 u=root |  [0;33mchanged: [goldindia1][0m
+2018-06-27 14:44:23,158 p=24653 u=root |  TASK [Restart nginx web server on CentOS] **************************************
+2018-06-27 14:44:23,200 p=24653 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:44:23,200 p=24653 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:44:24,068 p=24653 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:44:24,072 p=24653 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:44:24,074 p=24653 u=root |  TASK [Create the web root folder] **********************************************
+2018-06-27 14:44:24,214 p=24653 u=root |  [0;33mchanged: [goldindia1][0m
+2018-06-27 14:44:24,215 p=24653 u=root |  [1;35m [WARNING]: Consider using file module with state=directory rather than running mkdir
+[0m
+2018-06-27 14:44:24,219 p=24653 u=root |  [0;33mchanged: [goldindia2][0m
+2018-06-27 14:44:24,739 p=24653 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:44:24,755 p=24653 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:44:24,758 p=24653 u=root |  TASK [deploy our custom html page in nginx web server] *************************
+2018-06-27 14:44:24,961 p=24653 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:44:24,963 p=24653 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:44:24,968 p=24653 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:44:24,975 p=24653 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:44:24,977 p=24653 u=root |  TASK [Restart nginx web server on Ubuntu] **************************************
+2018-06-27 14:44:25,007 p=24653 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:44:25,011 p=24653 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:44:26,207 p=24653 u=root |  [0;33mchanged: [goldindia1][0m
+2018-06-27 14:44:26,217 p=24653 u=root |  [0;33mchanged: [goldindia2][0m
+2018-06-27 14:44:26,218 p=24653 u=root |  TASK [Restart nginx web server on CentOS] **************************************
+2018-06-27 14:44:26,261 p=24653 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:44:26,262 p=24653 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:44:27,120 p=24653 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:44:27,121 p=24653 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:44:27,122 p=24653 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 14:44:27,123 p=24653 u=root |  coldindia11                : ok=8    changed=4    unreachable=0    failed=0   
+2018-06-27 14:44:27,123 p=24653 u=root |  coldindia12                : ok=8    changed=4    unreachable=0    failed=0   
+2018-06-27 14:44:27,123 p=24653 u=root |  goldindia1                 : ok=7    changed=3    unreachable=0    failed=0   
+2018-06-27 14:44:27,123 p=24653 u=root |  goldindia2                 : ok=7    changed=3    unreachable=0    failed=0   
+2018-06-27 14:47:41,923 p=26495 u=root |  PLAY [Installs, configures and Deploys web page in nginx web server] ***********
+2018-06-27 14:47:41,937 p=26495 u=root |  TASK [setup] *******************************************************************
+2018-06-27 14:47:42,458 p=26495 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:47:42,503 p=26495 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:47:47,050 p=26495 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:47:47,108 p=26495 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:47:47,111 p=26495 u=root |  TASK [Install nginx web server on Ubuntu] **************************************
+2018-06-27 14:47:47,145 p=26495 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:47:47,146 p=26495 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:47:54,794 p=26495 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:47:54,895 p=26495 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:47:54,896 p=26495 u=root |  TASK [Install epel release on CentOS server] ***********************************
+2018-06-27 14:47:54,936 p=26495 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:47:54,938 p=26495 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:48:07,293 p=26495 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:48:11,365 p=26495 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:48:11,367 p=26495 u=root |  TASK [Install nginx web server on CentOS server] *******************************
+2018-06-27 14:48:11,417 p=26495 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:48:11,418 p=26495 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:48:27,613 p=26495 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:48:29,764 p=26495 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:48:29,766 p=26495 u=root |  TASK [Configure web root folder on Ubuntu Server] ******************************
+2018-06-27 14:48:29,799 p=26495 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:48:29,800 p=26495 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:48:29,922 p=26495 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:48:29,928 p=26495 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:48:29,930 p=26495 u=root |  TASK [Configure web root folder on CentOS Server] ******************************
+2018-06-27 14:48:29,972 p=26495 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:48:29,973 p=26495 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:48:30,097 p=26495 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:48:30,098 p=26495 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:48:30,100 p=26495 u=root |  TASK [Restart nginx web server on Ubuntu] **************************************
+2018-06-27 14:48:30,133 p=26495 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:48:30,134 p=26495 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:48:31,335 p=26495 u=root |  [0;33mchanged: [goldindia1][0m
+2018-06-27 14:48:31,335 p=26495 u=root |  [0;33mchanged: [goldindia2][0m
+2018-06-27 14:48:31,337 p=26495 u=root |  TASK [Restart nginx web server on CentOS] **************************************
+2018-06-27 14:48:31,376 p=26495 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:48:31,380 p=26495 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:48:32,243 p=26495 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:48:32,259 p=26495 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:48:32,261 p=26495 u=root |  TASK [Create the web root folder] **********************************************
+2018-06-27 14:48:32,385 p=26495 u=root |  [0;33mchanged: [goldindia1][0m
+2018-06-27 14:48:32,387 p=26495 u=root |  [1;35m [WARNING]: Consider using file module with state=directory rather than running mkdir
+[0m
+2018-06-27 14:48:32,404 p=26495 u=root |  [0;33mchanged: [goldindia2][0m
+2018-06-27 14:48:32,947 p=26495 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:48:32,958 p=26495 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:48:32,961 p=26495 u=root |  TASK [deploy our custom html page in nginx web server] *************************
+2018-06-27 14:48:33,152 p=26495 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:48:33,165 p=26495 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:48:33,168 p=26495 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:48:33,172 p=26495 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:48:33,173 p=26495 u=root |  TASK [Restart nginx web server on Ubuntu] **************************************
+2018-06-27 14:48:33,203 p=26495 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:48:33,206 p=26495 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:48:34,404 p=26495 u=root |  [0;33mchanged: [goldindia1][0m
+2018-06-27 14:48:34,404 p=26495 u=root |  [0;33mchanged: [goldindia2][0m
+2018-06-27 14:48:34,406 p=26495 u=root |  TASK [Restart nginx web server on CentOS] **************************************
+2018-06-27 14:48:34,448 p=26495 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:48:34,449 p=26495 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:48:35,309 p=26495 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:48:35,313 p=26495 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:48:35,315 p=26495 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 14:48:35,315 p=26495 u=root |  coldindia11                : ok=8    changed=3    unreachable=0    failed=0   
+2018-06-27 14:48:35,315 p=26495 u=root |  coldindia12                : ok=8    changed=3    unreachable=0    failed=0   
+2018-06-27 14:48:35,316 p=26495 u=root |  goldindia1                 : ok=7    changed=3    unreachable=0    failed=0   
+2018-06-27 14:48:35,316 p=26495 u=root |  goldindia2                 : ok=7    changed=3    unreachable=0    failed=0   
+2018-06-27 14:50:16,830 p=28306 u=root |  PLAY [Installs, configures and Deploys web page in nginx web server] ***********
+2018-06-27 14:50:16,844 p=28306 u=root |  TASK [setup] *******************************************************************
+2018-06-27 14:50:17,351 p=28306 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:50:17,354 p=28306 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:50:21,896 p=28306 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:50:26,955 p=28306 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:50:26,957 p=28306 u=root |  TASK [Install nginx web server on Ubuntu] **************************************
+2018-06-27 14:50:26,986 p=28306 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:50:26,994 p=28306 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:50:34,684 p=28306 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:50:35,167 p=28306 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:50:35,169 p=28306 u=root |  TASK [Install epel release on CentOS server] ***********************************
+2018-06-27 14:50:35,212 p=28306 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:50:35,213 p=28306 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:50:41,867 p=28306 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:50:49,793 p=28306 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:50:49,795 p=28306 u=root |  TASK [Install nginx web server on CentOS server] *******************************
+2018-06-27 14:50:49,834 p=28306 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:50:49,837 p=28306 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:50:56,667 p=28306 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:50:58,373 p=28306 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:50:58,375 p=28306 u=root |  TASK [Configure web root folder on Ubuntu Server] ******************************
+2018-06-27 14:50:58,408 p=28306 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:50:58,411 p=28306 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:50:58,540 p=28306 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:50:58,541 p=28306 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:50:58,543 p=28306 u=root |  TASK [Configure web root folder on CentOS Server] ******************************
+2018-06-27 14:50:58,579 p=28306 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:50:58,591 p=28306 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:50:58,709 p=28306 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:50:58,716 p=28306 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:50:58,719 p=28306 u=root |  TASK [Restart nginx web server on Ubuntu] **************************************
+2018-06-27 14:50:58,748 p=28306 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:50:58,751 p=28306 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:50:59,948 p=28306 u=root |  [0;33mchanged: [goldindia1][0m
+2018-06-27 14:50:59,949 p=28306 u=root |  [0;33mchanged: [goldindia2][0m
+2018-06-27 14:50:59,951 p=28306 u=root |  TASK [Restart nginx web server on CentOS] **************************************
+2018-06-27 14:50:59,989 p=28306 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:50:59,991 p=28306 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:51:00,875 p=28306 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:51:00,881 p=28306 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:51:00,882 p=28306 u=root |  TASK [Create the web root folder] **********************************************
+2018-06-27 14:51:01,014 p=28306 u=root |  [0;33mchanged: [goldindia1][0m
+2018-06-27 14:51:01,021 p=28306 u=root |  [0;33mchanged: [goldindia2][0m
+2018-06-27 14:51:01,022 p=28306 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:51:01,022 p=28306 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:51:01,024 p=28306 u=root |  TASK [deploy our custom html page in nginx web server] *************************
+2018-06-27 14:51:01,232 p=28306 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 14:51:01,233 p=28306 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 14:51:01,236 p=28306 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 14:51:01,240 p=28306 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 14:51:01,241 p=28306 u=root |  TASK [Restart nginx web server on Ubuntu] **************************************
+2018-06-27 14:51:01,271 p=28306 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 14:51:01,273 p=28306 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 14:51:02,486 p=28306 u=root |  [0;33mchanged: [goldindia1][0m
+2018-06-27 14:51:02,492 p=28306 u=root |  [0;33mchanged: [goldindia2][0m
+2018-06-27 14:51:02,494 p=28306 u=root |  TASK [Restart nginx web server on CentOS] **************************************
+2018-06-27 14:51:02,533 p=28306 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 14:51:02,535 p=28306 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 14:51:03,412 p=28306 u=root |  [0;33mchanged: [coldindia11][0m
+2018-06-27 14:51:03,425 p=28306 u=root |  [0;33mchanged: [coldindia12][0m
+2018-06-27 14:51:03,427 p=28306 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 14:51:03,427 p=28306 u=root |  coldindia11                : ok=8    changed=3    unreachable=0    failed=0   
+2018-06-27 14:51:03,427 p=28306 u=root |  coldindia12                : ok=8    changed=3    unreachable=0    failed=0   
+2018-06-27 14:51:03,427 p=28306 u=root |  goldindia1                 : ok=7    changed=3    unreachable=0    failed=0   
+2018-06-27 14:51:03,428 p=28306 u=root |  goldindia2                 : ok=7    changed=3    unreachable=0    failed=0   
+2018-06-27 15:18:00,381 p=30210 u=root |  PLAY [Installs, configures and Deploys web page in nginx web server] ***********
+2018-06-27 15:18:00,392 p=30210 u=root |  TASK [setup] *******************************************************************
+2018-06-27 15:18:00,941 p=30210 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 15:18:00,954 p=30210 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 15:18:05,451 p=30210 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 15:18:05,545 p=30210 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 15:18:05,553 p=30210 u=root |  TASK [Install nginx web server on Ubuntu] **************************************
+2018-06-27 15:18:05,583 p=30210 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 15:18:05,586 p=30210 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 15:18:13,812 p=30210 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 15:18:18,897 p=30210 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 15:18:18,899 p=30210 u=root |  TASK [Install epel release on CentOS server] ***********************************
+2018-06-27 15:18:18,944 p=30210 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 15:18:18,946 p=30210 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 15:18:30,590 p=30210 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 15:18:35,269 p=30210 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 15:18:35,271 p=30210 u=root |  TASK [Install nginx web server on CentOS server] *******************************
+2018-06-27 15:18:35,313 p=30210 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 15:18:35,316 p=30210 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 15:18:40,139 p=30210 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 15:18:46,817 p=30210 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 15:18:46,820 p=30210 u=root |  TASK [Configure web root folder on Ubuntu Server] ******************************
+2018-06-27 15:18:46,852 p=30210 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 15:18:46,854 p=30210 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 15:18:46,989 p=30210 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 15:18:46,990 p=30210 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 15:18:46,992 p=30210 u=root |  TASK [Configure web root folder on CentOS Server] ******************************
+2018-06-27 15:18:47,038 p=30210 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 15:18:47,039 p=30210 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 15:18:47,155 p=30210 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 15:18:47,155 p=30210 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 15:18:47,157 p=30210 u=root |  TASK [Create the web root folder] **********************************************
+2018-06-27 15:18:47,286 p=30210 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 15:18:47,298 p=30210 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 15:18:47,310 p=30210 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 15:18:47,311 p=30210 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 15:18:47,313 p=30210 u=root |  TASK [deploy our custom html page in nginx web server] *************************
+2018-06-27 15:18:47,497 p=30210 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 15:18:47,526 p=30210 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 15:18:47,542 p=30210 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 15:18:47,546 p=30210 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 15:18:47,555 p=30210 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 15:18:47,555 p=30210 u=root |  coldindia11                : ok=6    changed=0    unreachable=0    failed=0   
+2018-06-27 15:18:47,556 p=30210 u=root |  coldindia12                : ok=6    changed=0    unreachable=0    failed=0   
+2018-06-27 15:18:47,556 p=30210 u=root |  goldindia1                 : ok=5    changed=0    unreachable=0    failed=0   
+2018-06-27 15:18:47,556 p=30210 u=root |  goldindia2                 : ok=5    changed=0    unreachable=0    failed=0   
+2018-06-27 16:29:12,575 p=31531 u=root |  PLAY [Installs, configures and Deploys web page in nginx web server] ***********
+2018-06-27 16:29:12,586 p=31531 u=root |  TASK [setup] *******************************************************************
+2018-06-27 16:29:13,109 p=31531 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:29:13,130 p=31531 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:29:17,621 p=31531 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:29:17,717 p=31531 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:29:17,724 p=31531 u=root |  TASK [include] *****************************************************************
+2018-06-27 16:29:17,756 p=31531 u=root |  [0;36mincluded: /root/DevOps/Day3/Playbooks/installnginx.yml for coldindia11, coldindia12, goldindia1, goldindia2[0m
+2018-06-27 16:29:17,773 p=31531 u=root |  TASK [Install nginx web server on Ubuntu] **************************************
+2018-06-27 16:29:17,805 p=31531 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 16:29:17,810 p=31531 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 16:29:21,084 p=31531 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:29:25,769 p=31531 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:29:25,772 p=31531 u=root |  TASK [Install epel release on CentOS server] ***********************************
+2018-06-27 16:29:25,826 p=31531 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 16:29:25,827 p=31531 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 16:29:34,675 p=31531 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:29:35,388 p=31531 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:29:35,390 p=31531 u=root |  TASK [Install nginx web server on CentOS server] *******************************
+2018-06-27 16:29:35,440 p=31531 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 16:29:35,441 p=31531 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 16:29:49,142 p=31531 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:30:03,780 p=31531 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:30:03,783 p=31531 u=root |  TASK [include] *****************************************************************
+2018-06-27 16:30:03,819 p=31531 u=root |  [0;36mincluded: /root/DevOps/Day3/Playbooks/configure.yml for coldindia11, coldindia12, goldindia1, goldindia2[0m
+2018-06-27 16:30:03,855 p=31531 u=root |  TASK [Configure web root folder on Ubuntu Server] ******************************
+2018-06-27 16:30:03,888 p=31531 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 16:30:03,893 p=31531 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 16:30:04,026 p=31531 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:30:04,046 p=31531 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:30:04,049 p=31531 u=root |  TASK [Configure web root folder on CentOS Server] ******************************
+2018-06-27 16:30:04,094 p=31531 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 16:30:04,096 p=31531 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 16:30:04,222 p=31531 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:30:04,223 p=31531 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:30:04,225 p=31531 u=root |  TASK [include] *****************************************************************
+2018-06-27 16:30:04,251 p=31531 u=root |  [0;31mfatal: [coldindia11]: FAILED! => {"failed": true, "reason": "ERROR! the file_name '/root/DevOps/Day3/Playbooks/configurewebroot.yml' does not exist, or is not readable"}[0m
+2018-06-27 16:30:04,251 p=31531 u=root |  [0;31mfatal: [coldindia12]: FAILED! => {"failed": true, "reason": "ERROR! the file_name '/root/DevOps/Day3/Playbooks/configurewebroot.yml' does not exist, or is not readable"}[0m
+2018-06-27 16:30:04,251 p=31531 u=root |  [0;31mfatal: [goldindia1]: FAILED! => {"failed": true, "reason": "ERROR! the file_name '/root/DevOps/Day3/Playbooks/configurewebroot.yml' does not exist, or is not readable"}[0m
+2018-06-27 16:30:04,251 p=31531 u=root |  [0;31mfatal: [goldindia2]: FAILED! => {"failed": true, "reason": "ERROR! the file_name '/root/DevOps/Day3/Playbooks/configurewebroot.yml' does not exist, or is not readable"}[0m
+2018-06-27 16:30:04,253 p=31531 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 16:30:04,253 p=31531 u=root |  coldindia11                : ok=6    changed=0    unreachable=0    failed=1   
+2018-06-27 16:30:04,253 p=31531 u=root |  coldindia12                : ok=6    changed=0    unreachable=0    failed=1   
+2018-06-27 16:30:04,253 p=31531 u=root |  goldindia1                 : ok=5    changed=0    unreachable=0    failed=1   
+2018-06-27 16:30:04,253 p=31531 u=root |  goldindia2                 : ok=5    changed=0    unreachable=0    failed=1   
+2018-06-27 16:32:03,968 p=32518 u=root |  PLAY [Installs, configures and Deploys web page in nginx web server] ***********
+2018-06-27 16:32:03,978 p=32518 u=root |  TASK [setup] *******************************************************************
+2018-06-27 16:32:04,479 p=32518 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:32:09,050 p=32518 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:32:09,328 p=32518 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:32:16,542 p=32518 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:32:16,548 p=32518 u=root |  TASK [include] *****************************************************************
+2018-06-27 16:32:16,583 p=32518 u=root |  [0;36mincluded: /root/DevOps/Day3/Playbooks/installnginx.yml for coldindia11, coldindia12, goldindia1, goldindia2[0m
+2018-06-27 16:32:16,596 p=32518 u=root |  TASK [Install nginx web server on Ubuntu] **************************************
+2018-06-27 16:32:16,636 p=32518 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 16:32:16,639 p=32518 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 16:32:24,571 p=32518 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:32:24,596 p=32518 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:32:24,599 p=32518 u=root |  TASK [Install epel release on CentOS server] ***********************************
+2018-06-27 16:32:24,648 p=32518 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 16:32:24,651 p=32518 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 16:32:40,405 p=32518 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:32:41,557 p=32518 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:32:41,559 p=32518 u=root |  TASK [Install nginx web server on CentOS server] *******************************
+2018-06-27 16:32:41,609 p=32518 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 16:32:41,611 p=32518 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 16:32:51,690 p=32518 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:32:56,006 p=32518 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:32:56,008 p=32518 u=root |  TASK [include] *****************************************************************
+2018-06-27 16:32:56,039 p=32518 u=root |  [0;36mincluded: /root/DevOps/Day3/Playbooks/configure.yml for coldindia11, coldindia12, goldindia1, goldindia2[0m
+2018-06-27 16:32:56,069 p=32518 u=root |  TASK [Configure web root folder on Ubuntu Server] ******************************
+2018-06-27 16:32:56,103 p=32518 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 16:32:56,111 p=32518 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 16:32:56,233 p=32518 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:32:56,254 p=32518 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:32:56,257 p=32518 u=root |  TASK [Configure web root folder on CentOS Server] ******************************
+2018-06-27 16:32:56,306 p=32518 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 16:32:56,309 p=32518 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 16:32:56,428 p=32518 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:32:56,430 p=32518 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:32:56,433 p=32518 u=root |  TASK [include] *****************************************************************
+2018-06-27 16:32:56,465 p=32518 u=root |  [0;36mincluded: /root/DevOps/Day3/Playbooks/webroot.yml for coldindia11, coldindia12, goldindia2, goldindia1[0m
+2018-06-27 16:32:56,504 p=32518 u=root |  TASK [Create the web root folder] **********************************************
+2018-06-27 16:32:56,645 p=32518 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:32:56,651 p=32518 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:32:56,652 p=32518 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:32:56,665 p=32518 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:32:56,667 p=32518 u=root |  TASK [deploy our custom html page in nginx web server] *************************
+2018-06-27 16:32:56,870 p=32518 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:32:56,879 p=32518 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:32:56,883 p=32518 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:32:56,899 p=32518 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:32:56,907 p=32518 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 16:32:56,908 p=32518 u=root |  coldindia11                : ok=9    changed=0    unreachable=0    failed=0   
+2018-06-27 16:32:56,908 p=32518 u=root |  coldindia12                : ok=9    changed=0    unreachable=0    failed=0   
+2018-06-27 16:32:56,908 p=32518 u=root |  goldindia1                 : ok=8    changed=0    unreachable=0    failed=0   
+2018-06-27 16:32:56,908 p=32518 u=root |  goldindia2                 : ok=8    changed=0    unreachable=0    failed=0   
+2018-06-27 16:34:55,374 p=1204 u=root |  PLAY [Installs, configures and Deploys web page in nginx web server] ***********
+2018-06-27 16:34:55,384 p=1204 u=root |  TASK [setup] *******************************************************************
+2018-06-27 16:34:55,958 p=1204 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:34:55,962 p=1204 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:35:00,534 p=1204 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:35:00,639 p=1204 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:35:00,647 p=1204 u=root |  TASK [include] *****************************************************************
+2018-06-27 16:35:00,682 p=1204 u=root |  [0;36mincluded: /root/DevOps/Day3/Playbooks/installnginx.yml for coldindia11, coldindia12, goldindia1, goldindia2[0m
+2018-06-27 16:35:00,695 p=1204 u=root |  TASK [Install nginx web server on Ubuntu] **************************************
+2018-06-27 16:35:00,729 p=1204 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 16:35:00,738 p=1204 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 16:35:08,860 p=1204 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:35:09,155 p=1204 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:35:09,158 p=1204 u=root |  TASK [Install epel release on CentOS server] ***********************************
+2018-06-27 16:35:09,209 p=1204 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 16:35:09,212 p=1204 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 16:35:19,372 p=1204 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:35:21,879 p=1204 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:35:21,882 p=1204 u=root |  TASK [Install nginx web server on CentOS server] *******************************
+2018-06-27 16:35:21,932 p=1204 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 16:35:21,935 p=1204 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 16:35:34,160 p=1204 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:35:41,084 p=1204 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:35:41,088 p=1204 u=root |  TASK [include] *****************************************************************
+2018-06-27 16:35:41,119 p=1204 u=root |  [0;36mincluded: /root/DevOps/Day3/Playbooks/configure.yml for coldindia11, coldindia12, goldindia1, goldindia2[0m
+2018-06-27 16:35:41,149 p=1204 u=root |  TASK [Configure web root folder on Ubuntu Server] ******************************
+2018-06-27 16:35:41,183 p=1204 u=root |  [0;36mskipping: [coldindia11][0m
+2018-06-27 16:35:41,190 p=1204 u=root |  [0;36mskipping: [coldindia12][0m
+2018-06-27 16:35:41,317 p=1204 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:35:41,329 p=1204 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:35:41,332 p=1204 u=root |  TASK [Configure web root folder on CentOS Server] ******************************
+2018-06-27 16:35:41,380 p=1204 u=root |  [0;36mskipping: [goldindia1][0m
+2018-06-27 16:35:41,382 p=1204 u=root |  [0;36mskipping: [goldindia2][0m
+2018-06-27 16:35:41,502 p=1204 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:35:41,506 p=1204 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:35:41,508 p=1204 u=root |  TASK [include] *****************************************************************
+2018-06-27 16:35:41,540 p=1204 u=root |  [0;36mincluded: /root/DevOps/Day3/Playbooks/webroot.yml for coldindia11, coldindia12, goldindia1, goldindia2[0m
+2018-06-27 16:35:41,581 p=1204 u=root |  TASK [Create the web root folder] **********************************************
+2018-06-27 16:35:41,716 p=1204 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:35:41,721 p=1204 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:35:41,724 p=1204 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:35:41,725 p=1204 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:35:41,727 p=1204 u=root |  TASK [deploy our custom html page in nginx web server] *************************
+2018-06-27 16:35:41,923 p=1204 u=root |  [0;32mok: [goldindia1][0m
+2018-06-27 16:35:41,925 p=1204 u=root |  [0;32mok: [goldindia2][0m
+2018-06-27 16:35:41,936 p=1204 u=root |  [0;32mok: [coldindia12][0m
+2018-06-27 16:35:41,945 p=1204 u=root |  [0;32mok: [coldindia11][0m
+2018-06-27 16:35:41,953 p=1204 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 16:35:41,953 p=1204 u=root |  coldindia11                : ok=9    changed=0    unreachable=0    failed=0   
+2018-06-27 16:35:41,953 p=1204 u=root |  coldindia12                : ok=9    changed=0    unreachable=0    failed=0   
+2018-06-27 16:35:41,954 p=1204 u=root |  goldindia1                 : ok=8    changed=0    unreachable=0    failed=0   
+2018-06-27 16:35:41,954 p=1204 u=root |  goldindia2                 : ok=8    changed=0    unreachable=0    failed=0   
+2018-06-27 16:49:13,132 p=2398 u=root |  [0;31mERROR! 'host' is not a valid attribute for a Play
+
+The error appears to have been in '/root/DevOps/Day3/Playbooks/loops.yml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Demonstrates use of ansible loops
+  ^ here
+[0m
+2018-06-27 16:50:22,145 p=2403 u=root |  [0;31mERROR! 'host' is not a valid attribute for a Play
+
+The error appears to have been in '/root/DevOps/Day3/Playbooks/loops.yml': line 3, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Demonstrates use of ansible loops
+  ^ here
+[0m
+2018-06-27 16:50:36,609 p=2407 u=root |  [0;31mERROR! 'host' is not a valid attribute for a Play
+
+The error appears to have been in '/root/DevOps/Day3/Playbooks/loops.yml': line 3, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Demonstrates use of ansible loops
+  ^ here
+[0m
+2018-06-27 16:50:55,151 p=2410 u=root |  PLAY [Demonstrates use of ansible loops] ***************************************
+2018-06-27 16:50:55,159 p=2410 u=root |  TASK [setup] *******************************************************************
+2018-06-27 16:50:55,744 p=2410 u=root |  [0;32mok: [localhost][0m
+2018-06-27 16:50:55,764 p=2410 u=root |  TASK [Repeat this task 5 times] ************************************************
+2018-06-27 16:50:55,816 p=2410 u=root |  [0;32mok: [localhost] => (item=1) => {
+    "item": "1", 
+    "msg": "Count is 1."
+}[0m
+2018-06-27 16:50:55,819 p=2410 u=root |  [0;32mok: [localhost] => (item=2) => {
+    "item": "2", 
+    "msg": "Count is 2."
+}[0m
+2018-06-27 16:50:55,821 p=2410 u=root |  [0;32mok: [localhost] => (item=3) => {
+    "item": "3", 
+    "msg": "Count is 3."
+}[0m
+2018-06-27 16:50:55,822 p=2410 u=root |  [0;32mok: [localhost] => (item=4) => {
+    "item": "4", 
+    "msg": "Count is 4."
+}[0m
+2018-06-27 16:50:55,823 p=2410 u=root |  [0;32mok: [localhost] => (item=5) => {
+    "item": "5", 
+    "msg": "Count is 5."
+}[0m
+2018-06-27 16:50:55,825 p=2410 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 16:50:55,825 p=2410 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-06-27 17:13:06,381 p=3535 u=root |  [0;31mERROR! unexpected parameter type in action: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+The error appears to have been in '/root/DevOps/Day3/Playbooks/start_containers.yml': line 4, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: start the ubuntu container
+      ^ here
+[0m
+2018-06-27 17:14:06,574 p=3540 u=root |  PLAY [Demonstarte use of ansible docker modules] *******************************
+2018-06-27 17:14:06,582 p=3540 u=root |  TASK [setup] *******************************************************************
+2018-06-27 17:14:07,102 p=3540 u=root |  [0;32mok: [localhost][0m
+2018-06-27 17:14:07,105 p=3540 u=root |  TASK [start the ubuntu container] **********************************************
+2018-06-27 17:14:12,698 p=3540 u=root |  [0;33mchanged: [localhost] => (item=1)[0m
+2018-06-27 17:14:12,702 p=3540 u=root |  [0;33mchanged: [localhost] => (item=2)[0m
+2018-06-27 17:14:12,705 p=3540 u=root |  [0;33mchanged: [localhost] => (item=3)[0m
+2018-06-27 17:14:12,709 p=3540 u=root |  [0;33mchanged: [localhost] => (item=4)[0m
+2018-06-27 17:14:12,712 p=3540 u=root |  [0;33mchanged: [localhost] => (item=5)[0m
+2018-06-27 17:14:12,714 p=3540 u=root |  TASK [start the centos container] **********************************************
+2018-06-27 17:14:16,812 p=3540 u=root |  [0;31mfailed: [localhost] => (item=1) => {"changed": true, "failed": true, "item": "1", "msg": "Docker API Error: {\"message\":\"driver failed programming external connectivity on endpoint centos1 (d37b537ac89b7a4e9e5091a9326b357a7b83dc45b880cbd51b63ccc11d08ef7c): Bind for 0.0.0.0:7001 failed: port is already allocated\"}"}[0m
+2018-06-27 17:14:16,815 p=3540 u=root |  [0;31mfailed: [localhost] => (item=2) => {"changed": true, "failed": true, "item": "2", "msg": "Docker API Error: {\"message\":\"driver failed programming external connectivity on endpoint centos2 (3ced6996ba3c3917ae1978761118eb289e4d6a5f26f415afd9c7986a9cccc428): Bind for 0.0.0.0:7002 failed: port is already allocated\"}"}[0m
+2018-06-27 17:14:16,817 p=3540 u=root |  [0;31mfailed: [localhost] => (item=3) => {"changed": true, "failed": true, "item": "3", "msg": "Docker API Error: {\"message\":\"driver failed programming external connectivity on endpoint centos3 (c7f0c5dc75002ac8b25736fc3a504bf0a050a2dad5a13bc1afdac8288d6a40dc): Bind for 0.0.0.0:7003 failed: port is already allocated\"}"}[0m
+2018-06-27 17:14:16,819 p=3540 u=root |  [0;31mfailed: [localhost] => (item=4) => {"changed": true, "failed": true, "item": "4", "msg": "Docker API Error: {\"message\":\"driver failed programming external connectivity on endpoint centos4 (0707324fc139515c2820d15872a5fbd4b249397090fab5b7b0c794204b5c9fb2): Bind for 0.0.0.0:7004 failed: port is already allocated\"}"}[0m
+2018-06-27 17:14:16,822 p=3540 u=root |  [0;31mfailed: [localhost] => (item=5) => {"changed": true, "failed": true, "item": "5", "msg": "Docker API Error: {\"message\":\"driver failed programming external connectivity on endpoint centos5 (b1a699baef810fc7dbc60cc7fe2825716abd23358d8c8e39058fc63dd623e374): Bind for 0.0.0.0:7005 failed: port is already allocated\"}"}[0m
+2018-06-27 17:14:16,822 p=3540 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 17:14:16,823 p=3540 u=root |  localhost                  : ok=2    changed=1    unreachable=0    failed=1   
+2018-06-27 17:15:57,074 p=4390 u=root |  PLAY [Demonstarte use of ansible docker modules] *******************************
+2018-06-27 17:15:57,082 p=4390 u=root |  TASK [setup] *******************************************************************
+2018-06-27 17:15:57,641 p=4390 u=root |  [0;32mok: [localhost][0m
+2018-06-27 17:15:57,645 p=4390 u=root |  TASK [start the ubuntu container] **********************************************
+2018-06-27 17:15:58,525 p=4390 u=root |  [0;32mok: [localhost] => (item=1)[0m
+2018-06-27 17:15:58,528 p=4390 u=root |  [0;32mok: [localhost] => (item=2)[0m
+2018-06-27 17:15:58,529 p=4390 u=root |  [0;32mok: [localhost] => (item=3)[0m
+2018-06-27 17:15:58,531 p=4390 u=root |  [0;32mok: [localhost] => (item=4)[0m
+2018-06-27 17:15:58,533 p=4390 u=root |  [0;32mok: [localhost] => (item=5)[0m
+2018-06-27 17:15:58,534 p=4390 u=root |  TASK [start the centos container] **********************************************
+2018-06-27 17:16:03,150 p=4390 u=root |  [0;31mfailed: [localhost] => (item=1) => {"changed": true, "failed": true, "item": "1", "msg": "Docker API Error: {\"message\":\"driver failed programming external connectivity on endpoint centos1 (4e4ea8196cc0986cededf8687beb709e3ce65dde4e000cd3b4fdef420a4ff342): Bind for 0.0.0.0:3001 failed: port is already allocated\"}"}[0m
+2018-06-27 17:16:03,152 p=4390 u=root |  [0;31mfailed: [localhost] => (item=2) => {"changed": true, "failed": true, "item": "2", "msg": "Docker API Error: {\"message\":\"driver failed programming external connectivity on endpoint centos2 (a35cf2bca1ee90f448861bcf2e015ae18c1740777c8c3c0fdac6ec016213f546): Bind for 0.0.0.0:3002 failed: port is already allocated\"}"}[0m
+2018-06-27 17:16:03,154 p=4390 u=root |  [0;31mfailed: [localhost] => (item=3) => {"changed": true, "failed": true, "item": "3", "msg": "Docker API Error: {\"message\":\"driver failed programming external connectivity on endpoint centos3 (cd4a8773c3a5ebd0c53cb2ae056c114a6d687f60599e4e63efcee8f635acae64): Bind for 0.0.0.0:3003 failed: port is already allocated\"}"}[0m
+2018-06-27 17:16:03,156 p=4390 u=root |  [0;31mfailed: [localhost] => (item=4) => {"changed": true, "failed": true, "item": "4", "msg": "Docker API Error: {\"message\":\"driver failed programming external connectivity on endpoint centos4 (b0ac65c4da350173646dc5bd965bdb1e58971e25d6c7be34eceff1ffc1765e4b): Bind for 0.0.0.0:3004 failed: port is already allocated\"}"}[0m
+2018-06-27 17:16:03,158 p=4390 u=root |  [0;31mfailed: [localhost] => (item=5) => {"changed": true, "failed": true, "item": "5", "msg": "Docker API Error: {\"message\":\"driver failed programming external connectivity on endpoint centos5 (97f4f9f6d4f673c46f1c6ac756525b7d7993861bdcf6a2baebfe8287de40fa0c): Bind for 0.0.0.0:3005 failed: port is already allocated\"}"}[0m
+2018-06-27 17:16:03,159 p=4390 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 17:16:03,159 p=4390 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=1   
+2018-06-27 17:16:33,591 p=4814 u=root |  PLAY [Demonstarte use of ansible docker modules] *******************************
+2018-06-27 17:16:33,599 p=4814 u=root |  TASK [setup] *******************************************************************
+2018-06-27 17:16:34,164 p=4814 u=root |  [0;32mok: [localhost][0m
+2018-06-27 17:16:34,166 p=4814 u=root |  TASK [start the ubuntu container] **********************************************
+2018-06-27 17:16:35,039 p=4814 u=root |  [0;32mok: [localhost] => (item=1)[0m
+2018-06-27 17:16:35,041 p=4814 u=root |  [0;32mok: [localhost] => (item=2)[0m
+2018-06-27 17:16:35,043 p=4814 u=root |  [0;32mok: [localhost] => (item=3)[0m
+2018-06-27 17:16:35,044 p=4814 u=root |  [0;32mok: [localhost] => (item=4)[0m
+2018-06-27 17:16:35,046 p=4814 u=root |  [0;32mok: [localhost] => (item=5)[0m
+2018-06-27 17:16:35,048 p=4814 u=root |  TASK [start the centos container] **********************************************
+2018-06-27 17:16:40,756 p=4814 u=root |  [0;33mchanged: [localhost] => (item=1)[0m
+2018-06-27 17:16:40,761 p=4814 u=root |  [0;33mchanged: [localhost] => (item=2)[0m
+2018-06-27 17:16:40,764 p=4814 u=root |  [0;33mchanged: [localhost] => (item=3)[0m
+2018-06-27 17:16:40,768 p=4814 u=root |  [0;33mchanged: [localhost] => (item=4)[0m
+2018-06-27 17:16:40,771 p=4814 u=root |  [0;33mchanged: [localhost] => (item=5)[0m
+2018-06-27 17:16:40,773 p=4814 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 17:16:40,773 p=4814 u=root |  localhost                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-06-27 17:17:42,588 p=5550 u=root |  PLAY [Demonstarte use of ansible docker modules] *******************************
+2018-06-27 17:17:42,597 p=5550 u=root |  TASK [setup] *******************************************************************
+2018-06-27 17:17:43,202 p=5550 u=root |  [0;32mok: [localhost][0m
+2018-06-27 17:17:43,208 p=5550 u=root |  TASK [start the ubuntu container] **********************************************
+2018-06-27 17:17:44,083 p=5550 u=root |  [0;32mok: [localhost] => (item=1)[0m
+2018-06-27 17:17:44,085 p=5550 u=root |  [0;32mok: [localhost] => (item=2)[0m
+2018-06-27 17:17:44,086 p=5550 u=root |  [0;32mok: [localhost] => (item=3)[0m
+2018-06-27 17:17:44,088 p=5550 u=root |  [0;32mok: [localhost] => (item=4)[0m
+2018-06-27 17:17:44,090 p=5550 u=root |  [0;32mok: [localhost] => (item=5)[0m
+2018-06-27 17:17:44,092 p=5550 u=root |  TASK [start the centos container] **********************************************
+2018-06-27 17:17:44,961 p=5550 u=root |  [0;32mok: [localhost] => (item=1)[0m
+2018-06-27 17:17:44,964 p=5550 u=root |  [0;32mok: [localhost] => (item=2)[0m
+2018-06-27 17:17:44,966 p=5550 u=root |  [0;32mok: [localhost] => (item=3)[0m
+2018-06-27 17:17:44,968 p=5550 u=root |  [0;32mok: [localhost] => (item=4)[0m
+2018-06-27 17:17:44,970 p=5550 u=root |  [0;32mok: [localhost] => (item=5)[0m
+2018-06-27 17:17:44,971 p=5550 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 17:17:44,972 p=5550 u=root |  localhost                  : ok=3    changed=0    unreachable=0    failed=0   
+2018-06-27 17:19:46,101 p=5697 u=root |  PLAY [Demonstarte use of ansible docker modules] *******************************
+2018-06-27 17:19:46,110 p=5697 u=root |  TASK [setup] *******************************************************************
+2018-06-27 17:19:46,720 p=5697 u=root |  [0;32mok: [localhost][0m
+2018-06-27 17:19:46,726 p=5697 u=root |  TASK [start the ubuntu container] **********************************************
+2018-06-27 17:19:47,594 p=5697 u=root |  [0;32mok: [localhost] => (item=1)[0m
+2018-06-27 17:19:47,596 p=5697 u=root |  [0;32mok: [localhost] => (item=2)[0m
+2018-06-27 17:19:47,598 p=5697 u=root |  [0;32mok: [localhost] => (item=3)[0m
+2018-06-27 17:19:47,600 p=5697 u=root |  [0;32mok: [localhost] => (item=4)[0m
+2018-06-27 17:19:47,602 p=5697 u=root |  [0;32mok: [localhost] => (item=5)[0m
+2018-06-27 17:19:47,604 p=5697 u=root |  TASK [start the centos container] **********************************************
+2018-06-27 17:19:52,258 p=5697 u=root |  [0;33mchanged: [localhost] => (item=6)[0m
+2018-06-27 17:19:52,263 p=5697 u=root |  [0;33mchanged: [localhost] => (item=7)[0m
+2018-06-27 17:19:52,267 p=5697 u=root |  [0;33mchanged: [localhost] => (item=8)[0m
+2018-06-27 17:19:52,270 p=5697 u=root |  [0;33mchanged: [localhost] => (item=9)[0m
+2018-06-27 17:19:52,274 p=5697 u=root |  [0;31mfailed: [localhost] => (item=10) => {"changed": false, "failed": true, "item": "10", "msg": "Docker API Error: {\"message\":\"invalid port specification: \\\"80410\\\"\"}"}[0m
+2018-06-27 17:19:52,275 p=5697 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 17:19:52,275 p=5697 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=1   
+2018-06-27 17:20:35,348 p=6305 u=root |  PLAY [Demonstarte use of ansible docker modules] *******************************
+2018-06-27 17:20:35,356 p=6305 u=root |  TASK [setup] *******************************************************************
+2018-06-27 17:20:35,981 p=6305 u=root |  [0;32mok: [localhost][0m
+2018-06-27 17:20:35,987 p=6305 u=root |  TASK [start the ubuntu container] **********************************************
+2018-06-27 17:20:36,868 p=6305 u=root |  [0;32mok: [localhost] => (item=1)[0m
+2018-06-27 17:20:36,871 p=6305 u=root |  [0;32mok: [localhost] => (item=2)[0m
+2018-06-27 17:20:36,873 p=6305 u=root |  [0;32mok: [localhost] => (item=3)[0m
+2018-06-27 17:20:36,875 p=6305 u=root |  [0;32mok: [localhost] => (item=4)[0m
+2018-06-27 17:20:36,877 p=6305 u=root |  [0;32mok: [localhost] => (item=5)[0m
+2018-06-27 17:20:36,879 p=6305 u=root |  TASK [start the centos container] **********************************************
+2018-06-27 17:20:37,592 p=6305 u=root |  [0;32mok: [localhost] => (item=6)[0m
+2018-06-27 17:20:37,594 p=6305 u=root |  [0;32mok: [localhost] => (item=7)[0m
+2018-06-27 17:20:37,596 p=6305 u=root |  [0;32mok: [localhost] => (item=8)[0m
+2018-06-27 17:20:37,598 p=6305 u=root |  [0;32mok: [localhost] => (item=9)[0m
+2018-06-27 17:20:37,599 p=6305 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 17:20:37,599 p=6305 u=root |  localhost                  : ok=3    changed=0    unreachable=0    failed=0   
+2018-06-27 17:25:19,489 p=6469 u=root |  [0;31mERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/root/DevOps/Day3/Playbooks/start_containers.yml': line 7, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        name: "ubuntu{{item}}"
+	hostname: "ubuntu{{item}}"
+^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+[0m
+2018-06-27 17:29:30,223 p=6485 u=root |  PLAY [Demonstarte use of ansible docker modules] *******************************
+2018-06-27 17:29:30,231 p=6485 u=root |  TASK [setup] *******************************************************************
+2018-06-27 17:29:30,860 p=6485 u=root |  [0;32mok: [localhost][0m
+2018-06-27 17:29:30,864 p=6485 u=root |  TASK [start the ubuntu container] **********************************************
+2018-06-27 17:29:31,756 p=6485 u=root |  [0;32mok: [localhost] => (item=1)[0m
+2018-06-27 17:29:31,758 p=6485 u=root |  [0;32mok: [localhost] => (item=2)[0m
+2018-06-27 17:29:31,760 p=6485 u=root |  [0;32mok: [localhost] => (item=3)[0m
+2018-06-27 17:29:31,762 p=6485 u=root |  [0;32mok: [localhost] => (item=4)[0m
+2018-06-27 17:29:31,764 p=6485 u=root |  [0;32mok: [localhost] => (item=5)[0m
+2018-06-27 17:29:31,766 p=6485 u=root |  TASK [start the centos container] **********************************************
+2018-06-27 17:29:32,477 p=6485 u=root |  [0;32mok: [localhost] => (item=6)[0m
+2018-06-27 17:29:32,479 p=6485 u=root |  [0;32mok: [localhost] => (item=7)[0m
+2018-06-27 17:29:32,481 p=6485 u=root |  [0;32mok: [localhost] => (item=8)[0m
+2018-06-27 17:29:32,483 p=6485 u=root |  [0;32mok: [localhost] => (item=9)[0m
+2018-06-27 17:29:32,484 p=6485 u=root |  PLAY RECAP *********************************************************************
+2018-06-27 17:29:32,484 p=6485 u=root |  localhost                  : ok=3    changed=0    unreachable=0    failed=0   
+2018-06-28 09:19:07,151 p=5861 u=root |  PLAY [Stop and remove dockers] *************************************************
+2018-06-28 09:19:07,388 p=5861 u=root |  TASK [setup] *******************************************************************
+2018-06-28 09:19:08,297 p=5861 u=root |  [0;32mok: [localhost][0m
+2018-06-28 09:19:08,303 p=5861 u=root |  TASK [stop and remove the containers] ******************************************
+2018-06-28 09:19:10,675 p=5861 u=root |  [0;31mfailed: [localhost] => (item=1) => {"failed": true, "item": "1", "msg": "missing required arguments: image"}[0m
+2018-06-28 09:19:10,677 p=5861 u=root |  [0;31mfailed: [localhost] => (item=2) => {"failed": true, "item": "2", "msg": "missing required arguments: image"}[0m
+2018-06-28 09:19:10,678 p=5861 u=root |  PLAY RECAP *********************************************************************
+2018-06-28 09:19:10,678 p=5861 u=root |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2018-06-28 09:20:45,124 p=5983 u=root |  PLAY [Stop and remove dockers] *************************************************
+2018-06-28 09:20:45,132 p=5983 u=root |  TASK [setup] *******************************************************************
+2018-06-28 09:20:45,770 p=5983 u=root |  [0;32mok: [localhost][0m
+2018-06-28 09:20:45,776 p=5983 u=root |  TASK [stop and remove the containers] ******************************************
+2018-06-28 09:20:47,576 p=5983 u=root |  [0;33mchanged: [localhost] => (item=1)[0m
+2018-06-28 09:20:47,579 p=5983 u=root |  [0;33mchanged: [localhost] => (item=2)[0m
+2018-06-28 09:20:47,580 p=5983 u=root |  PLAY RECAP *********************************************************************
+2018-06-28 09:20:47,580 p=5983 u=root |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
